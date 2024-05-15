@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+    <title>Hito Studio | Gallery</title>
+  </head>
+
+  <body>
+    <!--Loader Container-->
+    <div class="loader-container" id="loader-container">
+      <span class="loader"></span>
+    </div>
+    <main class="wrapper container-fluid">
+      <!--Mobile Nav-->
+      <div class="mobile-nav-container" id="mobile-nav-container">
+        <div class="mobile-menu">
+          <div class="mobile-menu-logo">
+            <button
+              type="button"
+              class="hide-mobile-menu-btn"
+              id="hide-menu-btn"
+            >
+              <i class="fa-solid fa-xmark icon"></i>
+            </button>
+            <img src="../assets/images/logo.png" alt="logo" />
+          </div>
+          <div class="navigation mobile-navigation w-100">
+            <ul class="w-100">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="games.html">Portfolio</a></li>
+              <li class="active"><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mobile-menu-social">
+            <ul class="w-100 d-flex justify-content-center gap-3">
+              <li>
+                <a
+                  href="https://m.facebook.com/p/HitoStudios-100063952697033/"
+                  target="_blank"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/hitostudios" target="_blank"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://pk.linkedin.com/company/hitostudios"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Sticky Menu-->
+      <div
+        class="sticky-nav-container container-fluid animate__animated"
+        id="sticky-nav-container"
+      >
+        <nav class="sticky-nav">
+          <div class="sticky-logo">
+            <a href="../index.html">
+              <img src="../assets/images/hito_logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <div class="navigation sticky-menu">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="games.html">Portfolio</a></li>
+              <li class="active"><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--Header-->
+      <header class="container-fluid header" id="header">
+        <nav class="nav container-fluid">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/images/hito_logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <div class="navigation navs h-100">
+            <ul class="nav-items">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-links">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-links">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="games.html" class="nav-links">Portfolio</a>
+              </li>
+              <li class="nav-item active">
+                <a href="gallery.html" class="nav-links">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-links">Contact</a>
+              </li>
+            </ul>
+            <span class="search-icon"
+              ><i class="fa-solid fa-magnifying-glass fa-lg"></i
+            ></span>
+            <span class="nav-contact-btn">
+              <p>Need a Game? Contact Us</p>
+              <div class="contact-social-networks gap-4">
+                <a
+                  href="https://m.facebook.com/p/HitoStudios-100063952697033/"
+                  target="_blank"
+                  ><i class="fa-brands fa-square-facebook icon"></i
+                ></a>
+                <a
+                  href="https://pk.linkedin.com/company/hitostudios"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin icon"></i
+                ></a>
+                <a href="https://www.behance.net/hitostudios" target="_blank"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube icon"></i></a>
+              </div>
+            </span>
+            <button type="button" class="icon-bars" id="show-menu-btn">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <!--Section Banner-->
+      <section class="section section-banner container-fluid">
+        <div class="banner-content">
+          <h1>our gallery</h1>
+        </div>
+      </section>
+      <!--Gallery Section-->
+      <section class="gallery-section container-fluid" id="gallery-section">
+        <div class="container content-container">
+          <div
+            class="section-title gallery-title w-100 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="section-mark mb-4">
+              <span class="line line-left"></span>
+              <span
+                ><img
+                  src="../assets/images/icons/logo-icon-orange.png"
+                  alt="logo icon"
+              /></span>
+              <span class="line line-right"></span>
+            </div>
+            <h1>Photos Gallery</h1>
+            <h2>AWESOME SHOTS FROM US</h2>
+          </div>
+          <div class="masonry-gallery w-100">
+            <div class="masonry-container row" id="masonary-container">
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/19.jpg"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/19.jpg"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/13.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/13.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/14.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/14.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/15.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/15.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/16.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/16.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/17.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/17.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/21.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/21.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/10.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/10.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/11.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/11.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/20.jpg"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/20.jpg"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/18.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/18.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12"
+              >
+                <div class="galler-image-box">
+                  <figure class="gallery-image">
+                    <img
+                      src="../assets/images/gallery/22.png"
+                      alt="Gallery Image"
+                    />
+                    <div class="galler-image-overlay">
+                      <div class="galler-imag-overlay-content">
+                        <a href="#" class="link"
+                          ><i class="fa-solid fa-link icon"></i
+                        ></a>
+                        <a
+                          href="../assets/images/gallery/22.png"
+                          data-fancybox="gallery-2"
+                          data-caption
+                          class="link"
+                          ><i class="fa-solid fa-plus icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer Section-->
+      <section
+        class="section footer-section container-fluid"
+        id="footer-section"
+      >
+        <div class="footer-wrapper container-fluid w-100">
+          <div class="container content-container">
+            <div class="footer-logo text-center">
+              <img src="../assets/images/logo.png" alt="Footer Logo" />
+            </div>
+            <div class="quick-links w-100">
+              <a href="../index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="games.html">Portfolio</a>
+              <a href="gallery.html">Gallery</a>
+              <!-- <a href="blog.html">Blog</a> -->
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-contact w-100">
+              <a href="mailto:contact@hitostudios.net"
+                ><i class="fa-solid fa-envelope icon"></i>
+                contact@hitostudios.net</a
+              >
+              <span
+                ><i class="fa-solid fa-location-dot icon"></i>9C GOR-2
+                Bahawalpur House, Lahore, Pakistan</span
+              >
+              <a href=""
+                ><i class="fa-solid fa-phone icon"></i> +92 324 4953 691</a
+              >
+            </div>
+            <div class="copyright-text text-center">
+              <span
+                >&copy; Copyright Hito Gaming Studio 2023-2024. All Rights
+                Reserved.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/masonry.pkgd.min.js"></script>
+    <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/jQuery-inView.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/multi-animated-counter.js"
+    ></script>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
+  </body>
+</html>

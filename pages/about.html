@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+    <title>Hito Studio | About</title>
+  </head>
+
+  <body>
+    <!--Loader Container-->
+    <div class="loader-container" id="loader-container">
+      <span class="loader"></span>
+    </div>
+    <main class="wrapper container-fluid">
+      <!--Mobile Nav-->
+      <div class="mobile-nav-container" id="mobile-nav-container">
+        <div class="mobile-menu">
+          <div class="mobile-menu-logo">
+            <button
+              type="button"
+              class="hide-mobile-menu-btn"
+              id="hide-menu-btn"
+            >
+              <i class="fa-solid fa-xmark icon"></i>
+            </button>
+            <img src="../assets/images/logo.png" alt="logo" />
+          </div>
+          <div class="navigation mobile-navigation w-100">
+            <ul class="w-100">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li><a href="games.html">Portfolio</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mobile-menu-social">
+            <ul class="w-100 d-flex justify-content-center gap-3">
+              <li>
+                <a
+                  href="https://m.facebook.com/p/HitoStudios-100063952697033/"
+                  target="_blank"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/hitostudios" target="_blank"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://pk.linkedin.com/company/hitostudios"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Sticky Menu-->
+      <div
+        class="sticky-nav-container container-fluid animate__animated"
+        id="sticky-nav-container"
+      >
+        <nav class="sticky-nav">
+          <div class="sticky-logo">
+            <a href="../index.html">
+              <img src="../assets/images/hito_logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <div class="navigation sticky-menu">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li><a href="games.html">Portfolio</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--Header-->
+      <header class="container-fluid header" id="header">
+        <nav class="nav container-fluid">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/images/hito_logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <div class="navigation navs h-100">
+            <ul class="nav-items">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-links">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a href="about.html" class="nav-links">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="games.html" class="nav-links">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="gallery.html" class="nav-links">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-links">Contact</a>
+              </li>
+            </ul>
+            <span class="search-icon"
+              ><i class="fa-solid fa-magnifying-glass fa-lg"></i
+            ></span>
+            <span class="nav-contact-btn">
+              <p>Need a Game? Contact Us</p>
+              <div class="contact-social-networks gap-4">
+                <a
+                  href="https://m.facebook.com/p/HitoStudios-100063952697033/"
+                  target="_blank"
+                  ><i class="fa-brands fa-square-facebook icon"></i
+                ></a>
+                <a
+                  href="https://pk.linkedin.com/company/hitostudios"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin icon"></i
+                ></a>
+                <a href="https://www.behance.net/hitostudios" target="_blank"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube icon"></i></a>
+              </div>
+            </span>
+            <button type="button" class="icon-bars" id="show-menu-btn">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <!--Section Banner-->
+      <section class="section section-banner about-banner container-fluid">
+        <div class="banner-content">
+          <!-- <h1>About us</h1> -->
+        </div>
+      </section>
+      <!--About Section-->
+      <section class="about-section container-fluid" id="about-section">
+        <div class="first-row">
+          <div class="container mx-auto content-container">
+            <div class="row w-100 about-row-a">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="about-left-content left-content">
+                  <div class="left-content-heading about-headings">
+                    <span>About Hito Studios</span>
+                    <h1>Reality Oriented<br />Games of 2019</h1>
+                  </div>
+                  <div class="mark">
+                    <span
+                      ><img
+                        src="../assets/images/icons/logo-icon-black.png"
+                        alt="logo icon"
+                    /></span>
+                    <span class="line line-about"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-sm-12 col-md-12 col-lg-6">
+                <div class="about-right-content right-content">
+                  <div class="about-content w-100">
+                    <p>
+                      Hito Studios, established in 2023, is a leading gaming
+                      company offering cutting-edge and immersive gaming
+                      experiences, as well as architectural visualization
+                      (ArchViz) and AR-VR development services. We leverage
+                      innovative technology, a diverse game portfolio, and a
+                      global community to provide unparalleled entertainment and
+                      industry-leading solutions.
+                    </p>
+                    <p>
+                      Immersive Gameplay: Explore captivating virtual worlds
+                      with engaging gameplay experiences. Innovative Technology:
+                      Utilizing the latest advancements in graphics, AI, and VR
+                      for visually stunning games. Extending our expertise to
+                      architectural visualization and AR-VR development
+                      services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container content-container">
+          <div class="row w-100 about-row-b">
+            <div
+              class="row w-100 justify-content-center align-items-center mt-5"
+            >
+              <div class="col-sm-12 col-md-6 col-lg-4 service-item px-4">
+                <div class="service w-100">
+                  <a href="archviz.html" class="service-link">
+                    <div class="service-image item-b">
+                      <img
+                        src="../assets/images/resource/ArchViz_1.png"
+                        alt="service image"
+                      />
+                      <div class="service-heading">
+                        <h1>Archviz</h1>
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-content">
+                          <span
+                            ><img
+                              src="../assets/images/icons/logo-icon-two.png"
+                          /></span>
+                          <h1>Archviz</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <p>
+                        Acepteur sintas haecat sed cupidatat proident sunt culpa
+                        quit officia sedips sed ipsum ametor eserunt.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 service-item px-4">
+                <div class="service w-100">
+                  <a href="gamed.html" class="service-link">
+                    <div class="service-image item-a">
+                      <img
+                        src="../assets/images/resource/Game_Development.png"
+                        alt="service image"
+                      />
+                      <div class="service-heading">
+                        <h1>Game Development</h1>
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-content">
+                          <span
+                            ><img
+                              src="../assets/images/icons/logo-icon-two.png"
+                          /></span>
+                          <h1>Game Development</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <p>
+                        Acepteur sintas haecat sed cupidatat proident sunt culpa
+                        quit officia sedips sed ipsum ametor eserunt.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 service-item px-4">
+                <div class="service w-100">
+                  <a href="arvr.html" class="service-link">
+                    <div class="service-image item-b">
+                      <img
+                        src="../assets/images/resource/VR_AR_Applications.png"
+                        alt="service image"
+                      />
+                      <div class="service-heading">
+                        <h1>AR/VR Applications</h1>
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-content">
+                          <span
+                            ><img
+                              src="../assets/images/icons/logo-icon-two.png"
+                          /></span>
+                          <h1>AR/VR Applications</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <p>
+                        Acepteur sintas haecat sed cupidatat proident sunt culpa
+                        quit officia sedips sed ipsum ametor eserunt.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row w-100 justify-content-center align-items-center mt-5"
+            >
+              <div class="col-sm-12 col-md-6 col-lg-4 service-item px-4">
+                <div class="service w-100">
+                  <a href="designs.html" class="service-link">
+                    <div class="service-image item-a">
+                      <img
+                        src="../assets/images/resource/3D_Design_1.png"
+                        alt="service image"
+                      />
+                      <div class="service-heading">
+                        <h1>3D Designs</h1>
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-content">
+                          <span
+                            ><img
+                              src="../assets/images/icons/logo-icon-two.png"
+                          /></span>
+                          <h1>3D Designs</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <p>
+                        Acepteur sintas haecat sed cupidatat proident sunt culpa
+                        quit officia sedips sed ipsum ametor eserunt.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 service-item px-4">
+                <div class="service w-100">
+                  <a href="idm.html" class="service-link">
+                    <div class="service-image item-c">
+                      <img
+                        src="../assets/images/resource/Digital_Marketing_1.png"
+                        alt="service image"
+                      />
+                      <div class="service-heading">
+                        <h1>Innovative Digital Marketing</h1>
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-content">
+                          <span
+                            ><img
+                              src="../assets/images/icons/logo-icon-two.png"
+                          /></span>
+                          <h1>Innovative Digital Marketing</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <p>
+                        Acepteur sintas haecat sed cupidatat proident sunt culpa
+                        quit officia sedips sed ipsum ametor eserunt.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Counter Section-->
+      <section
+        class="section section-counter container-fluid"
+        id="section-counter"
+      >
+        <div class="container content-container">
+          <div class="row counter-row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter-item">
+              <div class="counter-container">
+                <div class="counter-box" id="counters_1">
+                  <div
+                    class="counter"
+                    data-TargetNum="130"
+                    data-Speed="2000"
+                    data-Easing="linear"
+                  ></div>
+                  <span>+</span>
+                </div>
+                <div class="counter-heading">Project Completed</div>
+                <span class="counter-icon"
+                  ><img src="../assets/images/icons/game-controller-100.png"
+                /></span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter-item">
+              <div class="counter-container">
+                <span class="counter-icon"
+                  ><img src="../assets/images/icons/user.png"
+                /></span>
+                <div class="counter-box" id="counters_1">
+                  <div
+                    class="counter"
+                    data-TargetNum="62"
+                    data-Speed="2000"
+                    data-Easing="linear"
+                  ></div>
+                  <span>+</span>
+                </div>
+                <div class="counter-heading">satisfied Clients</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter-item">
+              <div class="counter-container">
+                <div class="counter-box" id="counters_1">
+                  <div
+                    class="counter"
+                    data-TargetNum="45"
+                    data-Speed="2000"
+                    data-Easing="linear"
+                  ></div>
+                  <span>M</span>
+                </div>
+                <div class="counter-heading">Games Downloads</div>
+                <span class="counter-icon"
+                  ><img src="../assets/images/icons/download.png"
+                /></span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter-item">
+              <div class="counter-container">
+                <span class="counter-icon"
+                  ><img src="../assets/images/icons/growth.png"
+                /></span>
+                <div class="counter-box" id="counters_1">
+                  <div
+                    class="counter"
+                    data-TargetNum="70"
+                    data-Speed="2000"
+                    data-Easing="linear"
+                  ></div>
+                  <span>%</span>
+                </div>
+                <div class="counter-heading">Growth Rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Our Team Section-->
+      <section class="section section-team container-fluid" id="section-team">
+        <div class="container content-container">
+          <div
+            class="section-title gallery-title w-100 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="section-mark mb-4">
+              <span class="line line-left"></span>
+              <span
+                ><img
+                  src="../assets/images/icons/logo-icon-orange.png"
+                  alt="logo icon"
+              /></span>
+              <span class="line line-right"></span>
+            </div>
+            <h1>Our Team Members</h1>
+            <h2>CREATIVE MINDS BEHIND OUR GAMES</h2>
+          </div>
+          <div class="row mt-5">
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-xl-3 team-item-container"
+            >
+              <div class="team-item w-100">
+                <div class="team-box w-100">
+                  <div class="team-member-image-container">
+                    <div class="team-member-image">
+                      <img src="../assets/images/team/team-1.jpg" />
+                    </div>
+                  </div>
+                  <div class="team-member-name">
+                    <h1>Robert Glenn</h1>
+                  </div>
+                  <div class="team-member-designation">
+                    <h4>Game Developer</h4>
+                  </div>
+                  <div class="team-member-socials">
+                    <a href=""
+                      ><i class="fa-brands fa-square-facebook icon"></i
+                    ></a>
+                    <a href=""
+                      ><i class="fa-brands fa-square-twitter icon"></i
+                    ></a>
+                    <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram icon"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-xl-3 team-item-container"
+            >
+              <div class="team-item w-100">
+                <div class="team-box w-100">
+                  <div class="team-member-image-container">
+                    <div class="team-member-image">
+                      <img src="../assets/images/team/team-2.jpg" />
+                    </div>
+                  </div>
+                  <div class="team-member-name">
+                    <h1>Paul Wilson</h1>
+                  </div>
+                  <div class="team-member-designation">
+                    <h4>Game Developer</h4>
+                  </div>
+                  <div class="team-member-socials">
+                    <a href=""
+                      ><i class="fa-brands fa-square-facebook icon"></i
+                    ></a>
+                    <a href=""
+                      ><i class="fa-brands fa-square-twitter icon"></i
+                    ></a>
+                    <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram icon"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-xl-3 team-item-container"
+            >
+              <div class="team-item w-100">
+                <div class="team-box w-100">
+                  <div class="team-member-image-container">
+                    <div class="team-member-image">
+                      <img src="../assets/images/team/team-3.jpg" />
+                    </div>
+                  </div>
+                  <div class="team-member-name">
+                    <h1>Peter Thomas</h1>
+                  </div>
+                  <div class="team-member-designation">
+                    <h4>Game Developer</h4>
+                  </div>
+                  <div class="team-member-socials">
+                    <a href=""
+                      ><i class="fa-brands fa-square-facebook icon"></i
+                    ></a>
+                    <a href=""
+                      ><i class="fa-brands fa-square-twitter icon"></i
+                    ></a>
+                    <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram icon"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-xl-3 team-item-container"
+            >
+              <div class="team-item w-100">
+                <div class="team-box w-100">
+                  <div class="team-member-image-container">
+                    <div class="team-member-image">
+                      <img src="../assets/images/team/team-4.jpg" />
+                    </div>
+                  </div>
+                  <div class="team-member-name">
+                    <h1>Robert Glenn</h1>
+                  </div>
+                  <div class="team-member-designation">
+                    <h4>Game Developer</h4>
+                  </div>
+                  <div class="team-member-socials">
+                    <a href=""
+                      ><i class="fa-brands fa-square-facebook icon"></i
+                    ></a>
+                    <a href=""
+                      ><i class="fa-brands fa-square-twitter icon"></i
+                    ></a>
+                    <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram icon"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Review Section-->
+      <section
+        class="section reviews-section container-fluid"
+        id="review-section"
+      >
+        <div class="container content-container">
+          <div
+            class="section-title review-title w-100 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="section-mark mb-4">
+              <span class="line line-left"></span>
+              <span
+                ><img
+                  src="../assets/images/icons/logo-icon-orange.png"
+                  alt="logo icon"
+              /></span>
+              <span class="line line-right"></span>
+            </div>
+            <h1>Players Reviews</h1>
+            <h2>What they say about games</h2>
+          </div>
+          <div class="slider-testimonial owl-carousel owl-theme">
+            <div class="item">
+              <div class="slide-review">
+                Auis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                comod duis aute rure dolor reprehenderit voluptate velit esse
+                cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint
+                occaecat cupidatat non proident sunt in culpa qui officia. enim
+                ad minim veniam, quis nost exercitation ullamco laboris nisi ut
+                aliquip ex ea.
+              </div>
+            </div>
+            <div class="item">
+              <div class="slide-review">
+                Buis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                comod duis aute rure dolor reprehenderit voluptate velit esse
+                cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint
+                occaecat cupidatat non proident sunt in culpa qui officia. enim
+                ad minim veniam, quis nost exercitation ullamco laboris nisi ut
+                aliquip ex ea.
+              </div>
+            </div>
+            <div class="item">
+              <div class="slide-review">
+                Cuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                comod duis aute rure dolor reprehenderit voluptate velit esse
+                cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint
+                occaecat cupidatat non proident sunt in culpa qui officia. enim
+                ad minim veniam, quis nost exercitation ullamco laboris nisi ut
+                aliquip ex ea.
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-thumb-testimonial owl-carousel owl-theme">
+            <div class="item">
+              <div class="slide-thumb">
+                <img src="../assets/images/resource/rev-thumb-1.jpg" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="slide-thumb">
+                <img src="../assets/images/resource/rev-thumb-2.jpg" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="slide-thumb">
+                <img src="../assets/images/resource/rev-thumb-3.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer Section-->
+      <section
+        class="section footer-section container-fluid"
+        id="footer-section"
+      >
+        <div class="footer-wrapper container-fluid w-100">
+          <div class="container content-container">
+            <div class="footer-logo text-center">
+              <img src="../assets/images/logo.png" alt="Footer Logo" />
+            </div>
+            <div class="quick-links w-100">
+              <a href="../index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="games.html">Portfolio</a>
+              <a href="gallery.html">Gallery</a>
+              <!-- <a href="blog.html">Blog</a> -->
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-contact w-100">
+              <a href="mailto:contact@hitostudios.net"
+                ><i class="fa-solid fa-envelope icon"></i>
+                contact@hitostudios.net</a
+              >
+              <span
+                ><i class="fa-solid fa-location-dot icon"></i>9C GOR-2
+                Bahawalpur House, Lahore, Pakistan</span
+              >
+              <a href=""
+                ><i class="fa-solid fa-phone icon"></i> +92 324 4953 691</a
+              >
+            </div>
+            <div class="copyright-text text-center">
+              <span
+                >&copy; Copyright Hito Gaming Studio 2023-2024. All Rights
+                Reserved.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/jQuery-inView.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/multi-animated-counter.js"
+    ></script>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
+  </body>
+</html>

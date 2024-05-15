@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+    <title>Hito Studio | Games</title>
+  </head>
+
+  <body>
+    <!--Loader Container-->
+    <div class="loader-container" id="loader-container">
+      <span class="loader"></span>
+    </div>
+    <main class="wrapper container-fluid">
+      <!--Mobile Nav-->
+      <div class="mobile-nav-container" id="mobile-nav-container">
+        <div class="mobile-menu">
+          <div class="mobile-menu-logo">
+            <button
+              type="button"
+              class="hide-mobile-menu-btn"
+              id="hide-menu-btn"
+            >
+              <i class="fa-solid fa-xmark icon"></i>
+            </button>
+            <img src="../assets/images/logo.png" alt="logo" />
+          </div>
+          <div class="navigation mobile-navigation w-100">
+            <ul class="w-100">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="games.html">Portfolio</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mobile-menu-social">
+            <ul class="w-100 d-flex justify-content-center gap-3">
+              <li>
+                <a
+                  href="https://m.facebook.com/p/HitoStudios-100063952697033/"
+                  target="_blank"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/hitostudios" target="_blank"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://pk.linkedin.com/company/hitostudios"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Sticky Menu-->
+      <div
+        class="sticky-nav-container container-fluid animate__animated"
+        id="sticky-nav-container"
+      >
+        <nav class="sticky-nav">
+          <div class="sticky-logo">
+            <a href="../index.html">
+              <img src="../assets/images/hito_logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <div class="navigation sticky-menu">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="games.html">Portfolio</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--Header-->
+      <header class="container-fluid header" id="header">
+        <nav class="nav container-fluid">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/images/hito_logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <div class="navigation navs h-100">
+            <ul class="nav-items">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-links">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-links">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="games.html" class="nav-links">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="gallery.html" class="nav-links">Gallery</a>
+              </li>
+              <li class="nav-item active">
+                <a href="contact.html" class="nav-links">Contact</a>
+              </li>
+            </ul>
+            <span class="search-icon"
+              ><i class="fa-solid fa-magnifying-glass fa-lg"></i
+            ></span>
+            <span class="nav-contact-btn">
+              <p>Need a Game? Contact Us</p>
+              <div class="contact-social-networks gap-4">
+                <a
+                  href="https://m.facebook.com/p/HitoStudios-100063952697033/"
+                  target="_blank"
+                  ><i class="fa-brands fa-square-facebook icon"></i
+                ></a>
+                <a
+                  href="https://pk.linkedin.com/company/hitostudios"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin icon"></i
+                ></a>
+                <a href="https://www.behance.net/hitostudios" target="_blank"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube icon"></i></a>
+              </div>
+            </span>
+            <button type="button" class="icon-bars" id="show-menu-btn">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <!--Section Banner-->
+      <section class="section section-banner contact-banner container-fluid">
+        <div class="banner-content">
+          <h1>Contact Us</h1>
+        </div>
+      </section>
+      <!--Contact Section-->
+      <section
+        class="section contact-section container-fluid"
+        id="contact-section"
+        style="
+          background-color: #fff !important;
+          padding: 0 !important;
+          margin-bottom: 80px !important;
+        "
+      >
+        <!-- <div class="map-container container-fluid" id="map-container">
+          <div class="map" id="map"></div>
+        </div> -->
+        <div class="first-row contact-first-row">
+          <div class="container content-container">
+            <div class="row contact-row">
+              <div
+                class="col-sm-12 col-md-12 col-lg-6 contact-info-item"
+                style="height: 100% !important"
+              >
+                <div
+                  class="about-left-content left-content contact-left-content"
+                  style="
+                    justify-content: start;
+                    padding: 100px 80px 100px 20px !important;
+                  "
+                >
+                  <div class="left-content-heading about-headings">
+                    <span>CONACT US BY SENDING A MESSAGE</span>
+                    <h1>Got a Question?<br />Send Message</h1>
+                  </div>
+                  <div class="mark">
+                    <span
+                      ><img
+                        src="../assets/images/icons/logo-icon-black.png"
+                        alt="logo icon"
+                    /></span>
+                    <span class="line line-about"></span>
+                  </div>
+                  <div
+                    class="contact-info-container"
+                    style="padding-right: 0 !important"
+                  >
+                    <div class="contact-info-contact">
+                      <div class="contact-social-networks gap-4">
+                        <a
+                          href="https://m.facebook.com/p/HitoStudios-100063952697033/"
+                          target="_blank"
+                          ><i class="fa-brands fa-square-facebook icon"></i
+                        ></a>
+                        <a
+                          href="https://pk.linkedin.com/company/hitostudios"
+                          target="_blank"
+                          ><i class="fa-brands fa-linkedin icon"></i
+                        ></a>
+                        <a
+                          href="https://www.behance.net/hitostudios"
+                          target="_blank"
+                          ><i class="fa-brands fa-behance"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-brands fa-instagram icon"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-brands fa-youtube icon"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-sm-12 col-md-12 col-lg-6 contact-form-item contact-item-left"
+              >
+                <div class="contact-form contact-page-form">
+                  <form method="post" autocomplete="off">
+                    <div class="row input-fields-row-a">
+                      <div class="col-sm-12 col-md-12 col-lg-6 input-item">
+                        <div class="inputs">
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            class="form-control"
+                            placeholder="Your Name"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 input-item">
+                        <div class="inputs">
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="form-control"
+                            placeholder="Email Address"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row input-fields-row-b">
+                      <div class="col-sm-12 col-md-12 col-lg-6 input-item">
+                        <div class="inputs">
+                          <input
+                            type="number"
+                            name="number"
+                            id="number"
+                            class="form-control"
+                            placeholder="Phone Number"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 input-item">
+                        <div class="inputs">
+                          <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            class="form-control"
+                            placeholder="Subject"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row input-fields-row-c">
+                      <div class="col-sm-12 col-md-12 col-lg-12 input-item">
+                        <div class="inputs">
+                          <textarea
+                            type="text"
+                            name="message"
+                            id="message"
+                            rows="5"
+                            class="form-control"
+                            placeholder="Type Your Message"
+                            required
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row input-fields-row-d">
+                      <div class="col-sm-12 col-md-12 col-lg-12 input-item">
+                        <button
+                          type="submit"
+                          class="submit-btn"
+                          onmouseover=" animate_on_mouseover(this)"
+                          onmouseout="animate_on_mouseout(this)"
+                        >
+                          <img src="../assets/images/icons/logo-icon-two.png" />
+                          Send
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer Section-->
+      <section
+        class="section footer-section container-fluid"
+        id="footer-section"
+      >
+        <div class="footer-wrapper container-fluid w-100">
+          <div class="container content-container">
+            <div class="footer-logo text-center">
+              <img src="../assets/images/logo.png" alt="Footer Logo" />
+            </div>
+            <div class="quick-links w-100">
+              <a href="../index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="games.html">Portfolio</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-contact w-100">
+              <a href="mailto:contact@hitostudios.net"
+                ><i class="fa-solid fa-envelope icon"></i>
+                contact@hitostudios.net</a
+              >
+              <span
+                ><i class="fa-solid fa-location-dot icon"></i>9C GOR-2
+                Bahawalpur House, Lahore, Pakistan</span
+              >
+              <a href=""
+                ><i class="fa-solid fa-phone icon"></i> +92 324 4953 691</a
+              >
+            </div>
+            <div class="copyright-text text-center">
+              <span
+                >&copy; Copyright Hito Gaming Studio 2023-2024. All Rights
+                Reserved.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/jQuery-inView.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/multi-animated-counter.js"
+    ></script>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
+  </body>
+</html>
