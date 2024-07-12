@@ -766,7 +766,7 @@ Slider Section
 .slider.owl-theme .owl-nav,
 .slider.owl-theme .owl-dots {
   position: absolute;
-  top: 91.8%;
+  bottom: 0;
   z-index: 5;
   right: 0;
   display: flex;
@@ -813,7 +813,7 @@ About Section
 */
 
 .about-section {
-  background-image: url("../images/icons/dot-pattern-1.png");
+  background-image: url("../images/icons/dot-pattern-red-2.png");
   background-position: top left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -964,7 +964,7 @@ About Section
 
 .about-row-b {
   padding: 12rem 0 !important;
-  background-image: url("../images/icons/dot-pattern-1.png");
+  background-image: url("../images/icons/dot-pattern-red-2.png");
 }
 
 .service-link {
@@ -2053,10 +2053,11 @@ Footer Section
 .footer-section {
   z-index: 1;
   padding: 9rem 16rem !important;
-  background-image: url("../images/background/footer-bg.jpg");
+  background-image: url("../images/background/Footer_Banner1.png");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
+  background-origin: center;
 }
 
 .footer-wrapper {
@@ -2125,11 +2126,29 @@ Footer Section
   color: #606062;
 }
 
+.partner-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem !important;
+}
+
+.partner-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
 /*
 ================================================================
  Responsive Css
 ================================================================
 */
+
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .nav-items {
@@ -2199,10 +2218,6 @@ Footer Section
     height: 80vh;
   }
 
-  .owl-nav,
-  .owl-dots {
-    display: none;
-  }
 
   .about-content p {
     font-size: 1.5rem;
