@@ -16,8 +16,8 @@ window.onload = () => {
 var flag = false,
   duration = 500;
 $(".slider").owlCarousel({
-  animateOut: "fadeInLeftBig",
-  animateIn: "fadeInRightBig",
+  // animateOut: "fadeInLeftBig",
+  // animateIn: "lightSpeedInRight",
   margin: 0,
   padding: 0,
   loop: true,

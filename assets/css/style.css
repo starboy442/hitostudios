@@ -601,7 +601,7 @@ Slider Section
   z-index: -1;
 }
 
-/* .active>.item>.slide-image {
+.active>.item>.slide-image {
   animation: zoom 8000ms linear 1s;
 }
 
@@ -613,7 +613,7 @@ Slider Section
   100% {
     transform: scale(1.15);
   }
-} */
+}
 
 .slide-content {
   position: relative;
