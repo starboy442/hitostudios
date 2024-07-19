@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+window.onload = () => {
   const loader_container = document.getElementById("loader-container");
   const masonryContainer = document.getElementById("masonary-container");
   loader_container.style.opacity = 0;
@@ -10,14 +10,14 @@ window.addEventListener("DOMContentLoaded", () => {
       percentPosition: true,
     });
   });
-});
+};
 
 // Slider
 var flag = false,
   duration = 500;
 $(".slider").owlCarousel({
-  animateOut: "fadeOut",
-  animateIn: "fadeIn",
+  // animateOut: "fadeInLeftBig",
+  animateIn: "fadeInRightBig",
   margin: 0,
   padding: 0,
   loop: true,
@@ -219,15 +219,25 @@ $(".fancybox-share p").empty();
 // Window Events
 $(window).scroll(function () {
   checkVisability();
-  if(document.documentElement.scrollTop > 120 || document.body.scrollTop > 120){
-    document.documentElement.style.setProperty('--scrollbar-thumb-color', "#e60000");
+  if (
+    document.documentElement.scrollTop > 120 ||
+    document.body.scrollTop > 120
+  ) {
+    document.documentElement.style.setProperty(
+      "--scrollbar-thumb-color",
+      "#e60000"
+    );
   } else {
-    document.documentElement.style.setProperty('--scrollbar-thumb-color', "#232b2b");
+    document.documentElement.style.setProperty(
+      "--scrollbar-thumb-color",
+      "#232b2b"
+    );
   }
 });
 
-if(document.body.scrollTop === 0){
-  document.documentElement.style.setProperty('--scrollbar-thumb-color', "#232b2b");
+if (document.body.scrollTop === 0) {
+  document.documentElement.style.setProperty(
+    "--scrollbar-thumb-color",
+    "#232b2b"
+  );
 }
-
-
