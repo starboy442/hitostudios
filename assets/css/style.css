@@ -619,7 +619,7 @@ Slider Section
   position: relative;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1459,10 +1459,10 @@ Counter Section
 */
 
 .section-counter {
-  background-image: url("../images/background/bg-1.jpg");
+  background-image: url("../images/background/Mid_Banner.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .section-counter::before {
@@ -2013,6 +2013,17 @@ Pages - Banner Section
   background-size: 100% 100%;
 }
 
+.contact-banner {
+  background-image:
+    url("../images/background/OurContact.png");
+  background-size: 100% 100%;
+}
+
+.gallery-banner {
+  background-image:
+    url("../images/background/OurMoments.png");
+  background-size: 100% 100%;
+}
 
 
 
