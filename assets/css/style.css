@@ -2138,7 +2138,7 @@ Footer Section
 }
 
 .partner-section {
-  padding-bottom: 5rem !important;
+  padding: 5rem 0 !important;
 }
 
 .partner-logo {
@@ -2241,7 +2241,7 @@ Footer Section
     height: 80vh;
   }
 
-  .about-banner {
+  .section-banner {
     height: 400px;
   }
 
@@ -2461,8 +2461,12 @@ Footer Section
 }
 
 @media screen and (min-width:768px) and (max-width: 992px) {
-  .about-banner {
+  .section-banner {
     height: 300px;
+  }
+
+  .slider-container {
+    height: calc(100vh / 1.5);
   }
 
   .footer-section {
@@ -2479,12 +2483,16 @@ Footer Section
     margin-right: 2rem !important;
   }
 
+  .slider-container {
+    height: calc(100vh / 2);
+  }
+
   .slide-heading h1 {
     font-size: 3rem;
     margin-inline: 2rem !important;
   }
 
-  .about-banner {
+  .section-banner {
     height: 250px;
   }
 
@@ -2521,6 +2529,7 @@ Footer Section
   .footer-section {
     padding: 2rem 2rem !important;
   }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -2536,12 +2545,16 @@ Footer Section
     margin-right: 2rem !important;
   }
 
+  .slider-container {
+    height: calc(100vh / 2);
+  }
+
   .slide-heading h1 {
     font-size: 2rem;
     margin-inline: 1rem !important;
   }
 
-  .about-banner {
+  .section-banner {
     height: 150px;
   }
 
@@ -2631,6 +2644,8 @@ Footer Section
 
   .section-title h2 {
     font-size: 1.2rem !important;
+    padding-inline: 2rem !important;
+    text-align: center;
   }
 
   .section-title img.title_image {
@@ -2678,6 +2693,16 @@ Footer Section
   .footer-section {
     padding: 1rem 1rem !important;
   }
+
+  .partner-logo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .counter-heading {
+    text-align: center;
+  }
+
 
 
 }
