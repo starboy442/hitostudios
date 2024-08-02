@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700|Roboto:300,300i,400,400i,700&display=swap");
+@font-face {
+  font-family: 'Yantramanav Black';
+  src: url('../fonts/Yantramanav/Yantramanav-Black.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --tomato: #e60000;
@@ -26,7 +31,7 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Yantramanav Black", sans-serif !important;
 }
 
 main {
@@ -58,6 +63,26 @@ section {
   margin: 0 auto !important;
   position: static;
 }
+
+.content-container a.request_button {
+  padding: 8px 50px !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem !important;
+  color: var(--white);
+  background-color: var(--tomato);
+  text-decoration: none;
+  position: relative;
+  transition: all .75s;
+}
+
+.content-container a.request_button:hover {
+  background-color: var(--green);
+}
+
+
 
 /*
 ================================================================
@@ -964,6 +989,7 @@ About Section
 .about-row-b {
   padding: 12rem 0 !important;
   background-image: url("../images/icons/dot-pattern-red-2.png");
+  background-size: 100% 100%;
 }
 
 .service-link {
@@ -1110,6 +1136,7 @@ Game Section
   background-image: url("../images/icons/dot-pattern-2.png");
   background-repeat: no-repeat;
   background-position: left bottom;
+  background-size: 100% 100%;
   overflow: visible;
   padding: 10rem 0 3rem 0 !important;
 }
@@ -1338,6 +1365,7 @@ Gallery Section
   background-color: var(--white) !important;
   background-image: url("../images/icons/dot-pattern-1.png");
   padding-bottom: 8rem !important;
+  background-size: 100% 100%;
   height: auto !important;
 }
 
@@ -1474,6 +1502,7 @@ Counter Section
   left: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/icons/dot-pattern-3.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1669,6 +1698,7 @@ Team  Section
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   z-index: -1;
 }
 
@@ -1793,6 +1823,7 @@ Contact Section
   top: 0;
   left: 0;
   background: url("../images/icons/dot-pattern-4.png") left bottom no-repeat;
+  background-size: 100% 100%;
   z-index: -1;
 }
 
@@ -1988,11 +2019,11 @@ Pages - Banner Section
 ================================================================
 */
 .section-banner {
-  height: 500px;
+  height: 400px;
   background-image:
     url("../images/background/bg-1.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
 }

@@ -4,12 +4,12 @@ window.onload = () => {
   loader_container.style.opacity = 0;
   loader_container.style.zIndex = -1;
   document.body.style.overflowY = "visible";
-  imagesLoaded(masonryContainer, function () {
-    var masonry = new Masonry(masonryContainer, {
-      itemSelector: ".masonry-item",
-      percentPosition: true,
-    });
-  });
+  // imagesLoaded(masonryContainer, function () {
+  //   var masonry = new Masonry(masonryContainer, {
+  //     itemSelector: ".masonry-item",
+  //     percentPosition: true,
+  //   });
+  // });
 };
 
 // Slider
