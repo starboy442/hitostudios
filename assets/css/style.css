@@ -423,7 +423,7 @@ Header Section
 
 header {
   width: 100%;
-  height: 120px;
+  height: 100px;
   position: relative;
 }
 
@@ -573,7 +573,7 @@ Hero Section
 */
 .hero_section {
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   background-image: url("../images/background/hero_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -2042,6 +2042,12 @@ Footer Section
   }
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .hero_section {
+    height: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .nav-items {
     gap: 3rem;
@@ -2061,6 +2067,10 @@ Footer Section
 
   .slider-container {
     padding-left: 0 !important;
+  }
+
+  .hero_section {
+    height: auto;
   }
 
   .about-row-b {
