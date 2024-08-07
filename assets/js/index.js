@@ -169,7 +169,6 @@ items.forEach((li) => {
     active_links.forEach((link) => {
       link.classList.add("active");
     });
-    console.log(active_links);
     active_links = [];
   });
 });

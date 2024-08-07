@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Yantramanav Black';
-  src: url('../fonts/Yantramanav/Yantramanav-Black.ttf') format('ttf');
+  src: url('../fonts/Yantramanav/Yantramanav-Black.ttf') format('ttf'),
+    url('../fonts/Yantramanav/Yantramanav-Regular.ttf') format('ttf'), ;
   font-weight: 400;
   font-style: normal;
 }
@@ -567,267 +568,79 @@ header {
 
 /*
 ================================================================
-Slider Section
+Hero Section
 ================================================================
 */
-
-.slider-container {
+.hero_section {
   width: 100%;
   height: calc(100vh - 120px);
-  overflow: hidden;
-  /* padding-left: 150px !important; */
-}
-
-.slider,
-.slider .owl-stage-outer,
-.slider-testimonial .owl-stage-outer,
-.slider-thumb-testimonial .owl-stage-outer {
-  width: 100% !important;
-  height: 100% !important;
-  position: relative;
-}
-
-.slider .owl-stage,
-.slider-testimonial .owl-stage,
-.slider-thumb-testimonial .owl-stage,
-.owl-item {
-  height: inherit !important;
-}
-
-.slider-thumb-testimonial .owl-item {
-  width: 100px;
-  height: 100%;
-  border-radius: 100% !important;
-}
-
-.slider .item,
-.slider-testimonial .item,
-.slider-thumb-testimonial .item {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.slider-thumb-testimonial .item {
-  border-radius: 100%;
-}
-
-.slide-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-image: url("../images/background/hero_bg.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: 100% 100%;
-  z-index: -1;
 }
 
-.active>.item>.slide-image {
-  animation: zoom 8000ms linear 1s;
+.hero_row {
+  height: 100%;
+  padding: 0 8rem !important;
 }
 
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.10);
-  }
-}
-
-.slide-content {
-  position: relative;
+.hero_content {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero_title {
+  display: block;
+  color: var(--white);
+}
+
+.hero_title h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.hero_divider {
+  width: 100%;
+  height: 12px;
+  margin: 1rem 0 2rem 0 !important;
+  background-color: var(--tomato);
+}
+
+.hero_content_desc p {
+  font-size: 1.25rem;
+  color: var(--white);
+  text-align: start;
+  font-family: "Yantramanav Regular", sans-serif !important;
+}
+
+.hero_content_button {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-
-.platform-icons {
-  display: flex;
-  gap: 20px;
-  color: var(--white);
-  font-size: 9rem;
-  margin-bottom: 20px !important;
-  opacity: 0;
-  transform: translateY(0);
-}
-
-.slider .active>.item .platform-icons {
-  animation: slideDown 1.5s ease-out forwards;
-}
-
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.slide-heading {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  opacity: 0;
-  transform: scale(0.5);
-}
-
-.slider .active>.item .slide-heading {
-  animation: scaling 1s linear 0.5s forwards;
-}
-
-@keyframes scaling {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.slide-heading h1 {
-  font-size: 5rem;
-  color: var(--white);
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 30px !important;
-}
-
-.slide-button a {
-  display: block;
-  width: 160px;
+  width: 200px;
   height: 50px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  background-color: var(--tomato);
   color: var(--white);
-  background-color: var(--tomato);
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  opacity: 0;
-  transform: scale(0);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0 !important;
 }
 
-.slide-button a::before {
-  content: "";
-  display: block;
-  position: absolute;
+.hero_content_button a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.375rem;
+}
+
+.hero_thumbnail {
   width: 100%;
   height: 100%;
-  left: 0;
-  top: -100%;
-  background-color: var(--green);
-  z-index: -1;
-  transition: 0.5s cubic-bezier(0.8, 0.02, 0.76, 0.75);
-}
-
-.slide-button a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: -100%;
-  background-color: var(--tomato);
-  z-index: -1;
-  transition: 0.5s cubic-bezier(0.8, 0.02, 0.76, 0.75);
-}
-
-.show_animated_btn::before {
-  top: 0 !important;
-}
-
-.hide_animated_btn::before {
-  top: -100% !important;
-  transition: 0.1s linear 0.5s !important;
-}
-
-.hide_animated_btn::after {
-  top: 0 !important;
-}
-
-.show_animated_btn::after {
-  top: -100% !important;
-  transition: 0.1s linear !important;
-}
-
-.slider .active>.item .slide-button a {
-  animation: slideUp 1.2s ease-out 1s forwards;
-}
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.slider.owl-theme .owl-nav,
-.slider.owl-theme .owl-dots {
-  position: absolute;
-  bottom: 0;
-  z-index: 5;
-  right: 0;
   display: flex;
-  gap: 2px;
-}
-
-.slider.owl-theme .owl-dots {
-  z-index: 5;
-  left: 48%;
-  top: 95%;
-  gap: 10px;
-  width: fit-content;
-}
-
-.slider.owl-theme .owl-dots .owl-dot.active span {
-  background-color: var(--tomato) !important;
-}
-
-.slider.owl-theme .owl-dots .owl-dot span,
-.slider.owl-theme .owl-dots .owl-dot span:hover {
-  background-color: var(--white) !important;
-}
-
-.slider.owl-theme .owl-nav .owl-prev,
-.slider.owl-theme .owl-nav .owl-next {
-  width: 60px;
-  height: 60px;
-  outline: none;
-  border: none;
-  border-radius: 0 !important;
-  background-color: var(--tomato) !important;
-  cursor: pointer !important;
-  overflow: hidden;
-}
-
-.sv-inline--fa {
-  cursor: pointer !important;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*
@@ -986,10 +799,21 @@ About Section
   bottom: 0;
 }
 
+.portfolio_section {
+  background-image: url("../images/icons/dot-pattern-red-2.png");
+  background-size: cover 100%;
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+
+
 .about-row-b {
   padding: 12rem 0 !important;
-  background-image: url("../images/icons/dot-pattern-red-2.png");
-  background-size: 100% 100%;
+}
+
+.about-row-b.portfolio_row {
+  padding: 8rem 0 !important;
 }
 
 .service-link {
@@ -1176,6 +1000,7 @@ Game Section
 
 .latest-game-row {
   margin-bottom: 6rem !important;
+  justify-content: center;
 }
 
 .latest-game-content {
@@ -1329,9 +1154,10 @@ Game Section
   background-color: var(--green);
 }
 
+
 .image-container {
   width: 100%;
-  height: 450px;
+  height: 500px;
   display: block;
   position: relative;
   overflow: hidden;
@@ -1348,7 +1174,8 @@ Game Section
   width: 100%;
   height: 100%;
   display: block;
-  transition: 0.7s ease-in-out;
+  transition: .75s;
+
 }
 
 .latest-game-row:hover .image-container a img {
@@ -2020,8 +1847,7 @@ Pages - Banner Section
 */
 .section-banner {
   height: 400px;
-  background-image:
-    url("../images/background/bg-1.jpg");
+  background-image: url("../images/background/bg-1.jpg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -2038,20 +1864,17 @@ Pages - Banner Section
 }
 
 .about-banner {
-  background-image:
-    url("../images/background/OurStory.png");
+  background-image: url("../images/background/OurStory.png");
   background-size: 100% 100%;
 }
 
 .contact-banner {
-  background-image:
-    url("../images/background/OurContact.png");
+  background-image: url("../images/background/OurContact.png");
   background-size: 100% 100%;
 }
 
 .gallery-banner {
-  background-image:
-    url("../images/background/OurMoments.png");
+  background-image: url("../images/background/OurMoments.png");
   background-size: 100% 100%;
 }
 
@@ -2198,6 +2021,15 @@ Footer Section
 ================================================================
 */
 
+@media screen and (min-width: 1600px) {
+  .hero_thumbnail {
+    align-items: center;
+  }
+
+  .hero_thumbnail img {
+    transform: scale(1.3);
+  }
+}
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .nav-items {
@@ -2675,6 +2507,7 @@ Footer Section
   .latest-game-image-col {
     order: 1 !important;
   }
+
 
   .latest-game-content {
     padding: 2rem 2rem 2rem 2rem !important;
