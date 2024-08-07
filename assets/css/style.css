@@ -2019,6 +2019,10 @@ Footer Section
 */
 
 @media screen and (min-width: 1600px) {
+  .hero_section {
+    height: calc(100vh -120px);
+  }
+
   .hero_thumbnail {
     align-items: center;
   }
