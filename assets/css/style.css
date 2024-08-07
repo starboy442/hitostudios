@@ -2020,16 +2020,13 @@ Footer Section
 
 @media screen and (min-width: 1600px) {
   .hero_section {
-    height: calc(100vh -120px);
+    height: auto;
   }
 
   .hero_thumbnail {
     align-items: center;
   }
 
-  .hero_thumbnail img {
-    transform: scale(1.3);
-  }
 
   .hero_title h1 {
     font-size: 6rem;
