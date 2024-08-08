@@ -573,7 +573,7 @@ Hero Section
 */
 .hero_section {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: auto;
   background-image: url("../images/background/hero_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1154,7 +1154,7 @@ Game Section
 
 .image-container {
   width: 100%;
-  height: 500px;
+  height: 450px;
   display: block;
   position: relative;
   overflow: hidden;
@@ -1167,10 +1167,13 @@ Game Section
   overflow: hidden;
 }
 
+
+
 .image-container a img {
   width: 100%;
   height: 100%;
-  display: block;
+  object-fit: cover;
+  object-position: center;
   transition: .75s;
 
 }
@@ -2390,7 +2393,7 @@ Footer Section
   }
 
   .hero_title h1 {
-    font-size: 8rem;
+    font-size: 5rem;
     text-transform: uppercase;
   }
 
