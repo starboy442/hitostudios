@@ -53,22 +53,34 @@
             <ul class="w-100">
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="./pages/about.html">About</a></li>
-              <li class="dropdown">
-                <a href="#">Portfolio</a>
-                <ul class="dropdown_menu mobile_dropdown_menu">
-                  <li class="dropdown_item">
-                    <a href="./pages/archviz.html">Archviz</a>
-                  </li>
-                  <li class="dropdown_item">
-                    <a href="./pages/gamed.html">Game Development</a>
-                  </li>
-                  <li class="dropdown_item">
-                    <a href="./pages/arvr.html">AR/VR Application</a>
-                  </li>
-                  <li class="dropdown_item">
-                    <a href="./pages/designs.html">3D Designs</a>
-                  </li>
-                </ul>
+              <li>
+                <a
+                  data-bs-toggle="collapse"
+                  href="#collapseExample"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Portfolio <i class="fa-solid fa-chevron-down fa-sm mx-2"></i>
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body m_dropdown">
+                    <ul>
+                      <li class="m_dropdown_item">
+                        <a href="./pages/archviz.html">Archviz</a>
+                      </li>
+                      <li class="m_dropdown_item">
+                        <a href="./pages/gamed.html">Game Development</a>
+                      </li>
+                      <li class="m_dropdown_item">
+                        <a href="./pages/arvr.html">AR/VR Applications</a>
+                      </li>
+                      <li class="m_dropdown_item">
+                        <a href="./pages/designs.html">3D Designs</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <!-- <li><a href="./pages/gallery.html">Gallery</a></li> -->
               <li><a href="./pages/contact.html">Contact</a></li>
@@ -128,7 +140,9 @@
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="./pages/about.html">About</a></li>
               <li class="dropdown">
-                <a href="#">Portfolio</a>
+                <a href="#"
+                  >Portfolio <i class="fa-solid fa-chevron-down fa-sm"></i
+                ></a>
                 <ul class="dropdown_menu sticky_dropdown_menu">
                   <li class="dropdown_item">
                     <a href="./pages/archviz.html">Archviz</a>
@@ -168,7 +182,9 @@
                 <a href="./pages/about.html" class="nav-links">About</a>
               </li>
               <li class="nav-item dropdown">
-                <a href="#" class="nav-links">Portfolio</a>
+                <a href="#" class="nav-links"
+                  >Portfolio <i class="fa-solid fa-chevron-down fa-lg"></i
+                ></a>
                 <ul class="dropdown_menu">
                   <li class="dropdown_item">
                     <a href="./pages/archviz.html">Archviz</a>
